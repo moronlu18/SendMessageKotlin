@@ -1,0 +1,45 @@
+name: Desplegar Dokka en GitHub Pages
+
+on:
+  push:
+    branches: ["main"] # Se ejecuta cada vez que haces push a main
+
+# Permisos de escritura necesarios para que la acción pueda publicar la web
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el código del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Java 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Dar permisos de ejecución a Gradle
+        run: chmod +x gradlew
+
+      - name: Generar la documentación HTML con Dokka
+        run: ./gradlew dokkaGenerate
+
+      - name: Evitar que Jekyll rompa el formato de Dokka
+        run: touch documentation/.nojekyll
+
+      - name: Empaquetar la carpeta generada
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: documentation
+
+      - name: Publicar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
