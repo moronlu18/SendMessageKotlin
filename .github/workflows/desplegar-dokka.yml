@@ -39,7 +39,14 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: documentation
-
+          
+      - name: Ver qué ha generado Dokka (Debug)
+        run: |
+          echo "Contenido de la raíz:"
+          ls -la
+          echo "Contenido de la carpeta documentation:"
+          ls -la documentation/
+          
       - name: Publicar en GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
