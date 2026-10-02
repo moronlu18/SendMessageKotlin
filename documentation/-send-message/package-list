@@ -1,0 +1,41 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.example.sendmessage.model////PointingToDeclaration/-send-message/com.example.sendmessage.model/index.html
+$dokka.location:com.example.sendmessage.model/Message///PointingToDeclaration/-send-message/com.example.sendmessage.model/-message/index.html
+$dokka.location:com.example.sendmessage.model/Message/Message/#kotlin.Int#kotlin.String#com.example.sendmessage.model.Person#com.example.sendmessage.model.Person/PointingToDeclaration/-send-message/com.example.sendmessage.model/-message/-message.html
+$dokka.location:com.example.sendmessage.model/Message/content/#/PointingToDeclaration/-send-message/com.example.sendmessage.model/-message/content.html
+$dokka.location:com.example.sendmessage.model/Message/id/#/PointingToDeclaration/-send-message/com.example.sendmessage.model/-message/id.html
+$dokka.location:com.example.sendmessage.model/Message/receiver/#/PointingToDeclaration/-send-message/com.example.sendmessage.model/-message/receiver.html
+$dokka.location:com.example.sendmessage.model/Message/sender/#/PointingToDeclaration/-send-message/com.example.sendmessage.model/-message/sender.html
+$dokka.location:com.example.sendmessage.model/Person///PointingToDeclaration/-send-message/com.example.sendmessage.model/-person/index.html
+$dokka.location:com.example.sendmessage.model/Person/Person/#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/-send-message/com.example.sendmessage.model/-person/-person.html
+$dokka.location:com.example.sendmessage.model/Person/dni/#/PointingToDeclaration/-send-message/com.example.sendmessage.model/-person/dni.html
+$dokka.location:com.example.sendmessage.model/Person/name/#/PointingToDeclaration/-send-message/com.example.sendmessage.model/-person/name.html
+$dokka.location:com.example.sendmessage.model/Person/surname/#/PointingToDeclaration/-send-message/com.example.sendmessage.model/-person/surname.html
+$dokka.location:com.example.sendmessage////PointingToDeclaration/-send-message/com.example.sendmessage/index.html
+$dokka.location:com.example.sendmessage/SendMessageActivity.Companion///PointingToDeclaration/-send-message/com.example.sendmessage/-send-message-activity/-companion/index.html
+$dokka.location:com.example.sendmessage/SendMessageActivity.Companion/TAG/#/PointingToDeclaration/-send-message/com.example.sendmessage/-send-message-activity/-companion/-t-a-g.html
+$dokka.location:com.example.sendmessage/SendMessageActivity///PointingToDeclaration/-send-message/com.example.sendmessage/-send-message-activity/index.html
+$dokka.location:com.example.sendmessage/SendMessageActivity/SendMessageActivity/#/PointingToDeclaration/-send-message/com.example.sendmessage/-send-message-activity/-send-message-activity.html
+$dokka.location:com.example.sendmessage/SendMessageActivity/btSend/#/PointingToDeclaration/-send-message/com.example.sendmessage/-send-message-activity/bt-send.html
+$dokka.location:com.example.sendmessage/SendMessageActivity/etMessageText/#/PointingToDeclaration/-send-message/com.example.sendmessage/-send-message-activity/et-message-text.html
+$dokka.location:com.example.sendmessage/SendMessageActivity/onCreate/#[Error type: Unresolved type for Bundle]?/PointingToDeclaration/-send-message/com.example.sendmessage/-send-message-activity/on-create.html
+$dokka.location:com.example.sendmessage/SendMessageActivity/onDestroy/#/PointingToDeclaration/-send-message/com.example.sendmessage/-send-message-activity/on-destroy.html
+$dokka.location:com.example.sendmessage/SendMessageActivity/onPause/#/PointingToDeclaration/-send-message/com.example.sendmessage/-send-message-activity/on-pause.html
+$dokka.location:com.example.sendmessage/SendMessageActivity/onResume/#/PointingToDeclaration/-send-message/com.example.sendmessage/-send-message-activity/on-resume.html
+$dokka.location:com.example.sendmessage/SendMessageActivity/onStart/#/PointingToDeclaration/-send-message/com.example.sendmessage/-send-message-activity/on-start.html
+$dokka.location:com.example.sendmessage/SendMessageActivity/onStop/#/PointingToDeclaration/-send-message/com.example.sendmessage/-send-message-activity/on-stop.html
+$dokka.location:com.example.sendmessage/SendMessageApplication///PointingToDeclaration/-send-message/com.example.sendmessage/-send-message-application/index.html
+$dokka.location:com.example.sendmessage/SendMessageApplication/SendMessageApplication/#/PointingToDeclaration/-send-message/com.example.sendmessage/-send-message-application/-send-message-application.html
+$dokka.location:com.example.sendmessage/ViewMessageActivity.Companion///PointingToDeclaration/-send-message/com.example.sendmessage/-view-message-activity/-companion/index.html
+$dokka.location:com.example.sendmessage/ViewMessageActivity.Companion/TAG/#/PointingToDeclaration/-send-message/com.example.sendmessage/-view-message-activity/-companion/-t-a-g.html
+$dokka.location:com.example.sendmessage/ViewMessageActivity///PointingToDeclaration/-send-message/com.example.sendmessage/-view-message-activity/index.html
+$dokka.location:com.example.sendmessage/ViewMessageActivity/ViewMessageActivity/#/PointingToDeclaration/-send-message/com.example.sendmessage/-view-message-activity/-view-message-activity.html
+$dokka.location:com.example.sendmessage/ViewMessageActivity/onCreate/#[Error type: Unresolved type for Bundle]?/PointingToDeclaration/-send-message/com.example.sendmessage/-view-message-activity/on-create.html
+$dokka.location:com.example.sendmessage/ViewMessageActivity/onDestroy/#/PointingToDeclaration/-send-message/com.example.sendmessage/-view-message-activity/on-destroy.html
+$dokka.location:com.example.sendmessage/ViewMessageActivity/onPause/#/PointingToDeclaration/-send-message/com.example.sendmessage/-view-message-activity/on-pause.html
+$dokka.location:com.example.sendmessage/ViewMessageActivity/onResume/#/PointingToDeclaration/-send-message/com.example.sendmessage/-view-message-activity/on-resume.html
+$dokka.location:com.example.sendmessage/ViewMessageActivity/onStart/#/PointingToDeclaration/-send-message/com.example.sendmessage/-view-message-activity/on-start.html
+$dokka.location:com.example.sendmessage/ViewMessageActivity/onStop/#/PointingToDeclaration/-send-message/com.example.sendmessage/-view-message-activity/on-stop.html
+com.example.sendmessage
+com.example.sendmessage.model

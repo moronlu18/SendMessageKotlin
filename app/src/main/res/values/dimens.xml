@@ -1,0 +1,20 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="llSendMessageActivity_margin">16dp</dimen>
+    <dimen name="tvTitle_textSize">40sp</dimen>
+    <dimen name="tvTitle_padding">16dp</dimen>
+    <dimen name="tvTitle_margin">16dp</dimen>
+
+    <!-- activity_view_message.xml dimensions -->
+    <dimen name="cardViewMessage_marginTop">8dp</dimen>
+    <dimen name="cardViewMessage_cardCornerRadius">16dp</dimen>
+    <dimen name="cardViewMessage_cardElevation">4dp</dimen>
+    <dimen name="cardViewMessage_strokeWidth">1dp</dimen>
+    <dimen name="llCardContent_padding">16dp</dimen>
+    <dimen name="tvSender_marginBottom">12dp</dimen>
+    <dimen name="tvSender_textSize">20sp</dimen>
+    <dimen name="ivMessageImage_height">220dp</dimen>
+    <dimen name="ivMessageImage_marginBottom">16dp</dimen>
+    <dimen name="tvMessageContent_textSize">16sp</dimen>
+    <dimen name="tvMessageContent_lineSpacingExtra">4dp</dimen>
+</resources>

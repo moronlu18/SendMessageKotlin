@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/llSendMessageActivity_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/llSendMessageActivity"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tvTitle_margin"
+        android:background="?attr/colorPrimary"
+        android:gravity="center"
+        android:padding="@dimen/tvTitle_padding"
+        android:text="@string/tvTitle"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="@dimen/tvTitle_textSize"
+        android:textStyle="bold"
+        app:fontFamily="@font/stay_with_me" />
+
+    <EditText
+        android:id="@+id/etMessageText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/etMessageText"
+        android:importantForAutofill="no"
+        android:inputType="text|textMultiLine"
+        android:padding="12dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:contentDescription="@string/btSend"
+        app:srcCompat="@drawable/ic_send" />
+</LinearLayout>

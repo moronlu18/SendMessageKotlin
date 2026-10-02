@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+En lugar de incluir los pesados archivos .ttf o .otf dentro del APK (lo que aumentaría el tamaño de la descarga de tu app), este XML le indica a Android que solicite la fuente Ultra a los Google Play Services (com.google.android.gms.fonts) cuando la aplicación se ejecute.
+Si el teléfono u otra aplicación ya la tiene descargada, la reutiliza; de lo contrario, la descarga en segundo plano.
+-->
+
+<!--
+Para cualquier otra fuente externa (.ttf/.otf): Debes descargar el archivo tipográfico y añadirlo como recurso local directamente en tu proyecto (dentro de app/src/main/res/font/).
+-->
+<font-family xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:fontProviderAuthority="com.google.android.gms.fonts"
+    app:fontProviderPackage="com.google.android.gms"
+    app:fontProviderQuery="Ultra"
+    app:fontProviderCerts="@array/com_google_android_gms_fonts_certs">
+</font-family>

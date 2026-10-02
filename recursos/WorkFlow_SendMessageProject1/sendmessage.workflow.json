@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Flujo de la app SendMessage (Android)",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    { "id": "usuario", "label": "Usuario / Dispositivo" },
+    { "id": "framework", "label": "Android Framework" },
+    { "id": "app", "label": "Aplicación SendMessage" }
+  ],
+  "phases": [
+    { "id": "arranque", "label": "Arranque", "fromCol": 0, "toCol": 1 },
+    { "id": "creacion_ui", "label": "Creación de la UI", "fromCol": 2, "toCol": 3, "variant": "emphasis" },
+    { "id": "uso", "label": "Uso de la app", "fromCol": 4, "toCol": 5, "variant": "dashed" }
+  ],
+  "groups": [
+    { "id": "actividad_layout", "label": "Actividad e inflado del layout", "lane": "app", "fromCol": 2, "toCol": 3, "variant": "emphasis" }
+  ],
+  "mainPath": ["launcher", "am", "actividad", "layout", "escribe", "envia", "pendiente"],
+  "nodes": [
+    { "id": "launcher", "lane": "usuario", "col": 0, "type": "external", "label": "Abrir la app", "sublabel": "tap en el icono (LAUNCHER)", "width": 148 },
+    { "id": "am", "lane": "framework", "col": 1, "type": "cloud", "label": "Activity Manager", "sublabel": "crea la actividad", "width": 148 },
+    { "id": "actividad", "lane": "app", "col": 2, "type": "frontend", "label": "SendMessageActivity", "sublabel": "onCreate() → setContentView()", "width": 148 },
+    { "id": "layout", "lane": "app", "col": 3, "type": "frontend", "label": "activity_send_message", "sublabel": "título · EditText · FAB", "width": 148 },
+    { "id": "escribe", "lane": "usuario", "col": 4, "type": "external", "label": "Escribir mensaje", "sublabel": "campo EditText", "width": 148 },
+    { "id": "envia", "lane": "usuario", "col": 5, "type": "external", "label": "Pulsar botón Enviar", "sublabel": "FloatingActionButton ic_send", "width": 148 },
+    { "id": "pendiente", "lane": "app", "col": 5, "type": "backend", "label": "Manejo del envío", "sublabel": "listener del FAB", "tag": "por implementar", "width": 148 }
+  ],
+  "edges": [
+    { "id": "e_launcher_am", "from": "launcher", "to": "am", "label": "intent MAIN / LAUNCHER" },
+    { "id": "e_am_actividad", "from": "am", "to": "actividad", "label": "crear instancia" },
+    { "id": "e_actividad_layout", "from": "actividad", "to": "layout", "label": "setContentView()", "variant": "emphasis" },
+    { "id": "e_layout_escribe", "from": "layout", "to": "escribe", "label": "UI visible: título + campo + botón" },
+    { "id": "e_escribe_envia", "from": "escribe", "to": "envia", "label": "texto listo" },
+    { "id": "e_envia_pendiente", "from": "envia", "to": "pendiente", "label": "sin handler aún", "variant": "dashed", "role": "branch" }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Flujo principal",
+      "items": [
+        "SendMessageActivity es la única pantalla (exportada como MAIN / LAUNCHER)",
+        "El layout infla título con fuente Ultra, campo EditText y FAB de enviar"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Estado actual del código",
+      "items": [
+        "El botón Enviar aún no tiene listener (onClick)",
+        "Envío del mensaje pendiente de implementar"
+      ]
+    }
+  ]
+}

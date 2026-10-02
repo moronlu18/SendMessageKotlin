@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SendMessage</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="btSend">Enviar</string>
+    <string name="tvTitle">Aplicación SMS</string>
+    <string name="etMessageText">Escribe tu mensaje en esta pantalla</string>
+
+    <string name="view_message_title">Detalle del Mensaje</string>
+    <string name="tvSender">De: Mamá</string>
+    <string name="sender_full_name">"De: %1$s %2$s"</string>
+    <string name="message_content">¡Hola hijo/a! Te escribo para recordarte que te quiero mucho. Espero que tengas un día maravilloso y que te vaya muy bien en todo.</string>
+    <string name="error_message">Error: No se ha podido recibir el mensaje.</string>
+</resources>

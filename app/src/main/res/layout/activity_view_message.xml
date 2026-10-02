@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llViewMessageActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/llSendMessageActivity_margin"
+    android:background="?attr/colorSurface"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tvTitle_margin"
+            android:background="@color/heart_color"
+            android:gravity="center"
+            android:padding="@dimen/tvTitle_padding"
+            android:text="@string/view_message_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tvTitle_textSize"
+            android:textStyle="bold"
+            app:fontFamily="@font/stay_with_me" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardViewMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cardViewMessage_marginTop"
+            app:cardCornerRadius="@dimen/cardViewMessage_cardCornerRadius"
+            app:cardElevation="@dimen/cardViewMessage_cardElevation"
+            app:strokeColor="?attr/colorOutlineVariant"
+            app:strokeWidth="@dimen/cardViewMessage_strokeWidth">
+
+            <LinearLayout
+                android:id="@+id/llCardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/llCardContent_padding">
+
+
+                <TextView
+                    android:id="@+id/tvSender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/tvSender_marginBottom"
+                    android:text="@string/tvSender"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="@dimen/tvSender_textSize"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/ivMessageImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ivMessageImage_height"
+                    android:layout_marginBottom="@dimen/ivMessageImage_marginBottom"
+                    android:background="?attr/colorSurfaceVariant"
+                    android:contentDescription="@string/view_message_title"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/corazones" />
+
+
+                <TextView
+                    android:id="@+id/tvMessageContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/tvMessageContent_lineSpacingExtra"
+                    android:text="@string/message_content"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="@dimen/tvMessageContent_textSize" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>
