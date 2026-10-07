@@ -38,7 +38,7 @@ jobs:
       - name: Empaquetar la carpeta generada
         uses: actions/upload-pages-artifact@v3
         with:
-          path: documentation
+          path: documentation/html
 
       - name: Publicar en GitHub Pages
         id: deployment
