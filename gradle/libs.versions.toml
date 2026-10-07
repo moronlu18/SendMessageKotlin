@@ -11,6 +11,7 @@ activityKtx = "1.13.0"
 navigationFragmentKtx = "2.10.2"
 navigationUiKtx = "2.10.2"
 dokka="2.0.0"
+parcelize="2.4.20"
 
 
 
@@ -31,4 +32,5 @@ androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-dokka={ id="org.jetbrains.dokka", version.ref="dokka"}
+kotlin-parcelize={id="org.jetbrains.kotlin.plugin.parcelize", version.ref="parcelize"}
 

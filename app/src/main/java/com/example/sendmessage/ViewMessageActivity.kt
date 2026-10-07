@@ -49,8 +49,8 @@ class ViewMessageActivity : AppCompatActivity() {
      *
      * @param savedInstanceState Estado guardado de la actividad.
      */
-    @Suppress("DEPRECATION")
-    override fun onCreate(savedInstanceState: Bundle?) {
+     @Suppress("DEPRECATION")
+     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_message)
         
@@ -64,7 +64,8 @@ class ViewMessageActivity : AppCompatActivity() {
         // Verificamos que el bundle no sea nulo para evitar errores
         if (bundle != null) {
             // Recuperamos el objeto Message serializable enviado desde SendMessageActivity
-            val message = bundle.getSerializable("KEY_MESSAGE") as? Message
+            //val message = bundle.getSerializable("KEY_MESSAGE") as? Message
+            val message = bundle.getParcelable("KEY_MESSAGE") as? Message
 
             if (message != null) {
                 // Se asigna el nombre y apellido del remitente a tvSender

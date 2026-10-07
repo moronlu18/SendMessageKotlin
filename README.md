@@ -3,12 +3,9 @@
 Aplicación Android en **Kotlin** que demuestra cómo pasar objetos complejos entre dos
 actividades usando un `Intent` explícito y un `Bundle`, con el ciclo de vida de `Activity`
 como eje del aprendizaje.
-
-<!-- Capturas de pantalla: pendiente.
-     Coloca aquí las capturas reales de la app (envío y detalle) y descomenta:
-     ![Pantalla de envío](recursos/capturas/enviar.png)
-     ![Pantalla de detalle](recursos/capturas/detalle.png)
-     Rutas sugeridas: recursos/capturas/*.png -->
+   
+![Pantalla de envío](images/send_activity.png)
+![Pantalla de detalle del mensaje](images/view_activity.png)
 
 ## Características y Funcionalidades
 
@@ -19,6 +16,7 @@ como eje del aprendizaje.
 - Seguimiento completo del ciclo de vida de `Activity` con trazas en LogCat.
 - Formateo del nombre del remitente con recursos de cadena y placeholders (`%1$s %2$s`).
 - Documentación API generada con **Dokka 2.0** en formato HTML.
+
 
 ## Arquitectura y Stack Tecnológico
 

@@ -3,7 +3,6 @@ package com.example.sendmessage
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sendmessage.model.Message
@@ -86,7 +85,8 @@ class SendMessageActivity : AppCompatActivity() {
         val receiver = Person ("98765432A", "Lourdes","Rodríguez")
 
         val message = Message(1, etMessageText.text.toString(),sender, receiver)
-        bundle.putSerializable("KEY_MESSAGE", message)
+        //bundle.putSerializable("KEY_MESSAGE", message)
+        bundle.putParcelable("KEY_MESSAGE", message)
         intent.putExtras(bundle)
         startActivity(intent)
 
