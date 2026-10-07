@@ -53,12 +53,12 @@ dokka {
     moduleName.set("SendMessage")
 
     dokkaPublications.html {
-        outputDirectory.set(rootProject.file("documentation"))
+        outputDirectory.set(rootProject.file("documentation/html"))
     }
 
     dokkaSourceSets {
         register("main") {
-            //sourceRoots.from(file("src/main/java"))
+            sourceRoots.from(file("src/main/java"))
             jdkVersion.set(11)
             enableAndroidDocumentationLink.set(false)
         }
