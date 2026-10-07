@@ -33,7 +33,7 @@ jobs:
         run: ./gradlew dokkaGenerate
 
       - name: Evitar que Jekyll rompa el formato de Dokka
-        run: touch documentation/.nojekyll
+        run: touch documentation/html/.nojekyll
 
       - name: Empaquetar la carpeta generada
         uses: actions/upload-pages-artifact@v3
